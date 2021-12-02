@@ -140,7 +140,7 @@ a.btn-primary {
   #header-wrapper .bottom-header .custom-container .block-container {
     position: relative;
     justify-content: space-between;
-    border-bottom: 1px solid #ECECEC; }
+    border-bottom: none; }
     #header-wrapper .bottom-header .custom-container .block-container .logo-container {
       position: absolute;
       left: 0; }
@@ -1690,7 +1690,8 @@ body.logged_in {
   color: #333;
   text-transform: capitalize;
   line-height: 1.6;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  padding-left: 0.75rem; }
 
 .shop-table thead {
   width: 100%; }
@@ -1951,13 +1952,13 @@ form.account-details-form .form-group p {
   text-transform: uppercase; }
 
 .shop-table.cart-table th {
-  padding: 0.7rem 0; }
+  padding: 0.7rem 0.75rem; }
 
 .shop-table.cart-table .product-price {
   width: 17.3%; }
 
 .shop-table.cart-table .product-quantity {
-  width: 25.7%; }
+  width: 16%; }
 
 .shop-table.cart-table .product-subtotal {
   width: 16%; }
@@ -1966,7 +1967,7 @@ form.account-details-form .form-group p {
   color: #333; }
 
 .shop-table.cart-table .product-quantity .input-group {
-  max-width: 120px; }
+  max-width: 100px; }
 
 .shop-table.cart-table .btn-close {
   top: -8px;
@@ -2260,6 +2261,9 @@ table.order-table {
   align-items: center;
   margin-bottom: 20px; }
 
+.payment-card:nth-child(1) img {
+  height: 50px; }
+
 .payment-card li,
 .payment-bank-card li {
   position: relative;
@@ -2495,6 +2499,11 @@ table.order-table {
   .login-flex .card .card-footer {
     background: #fff; }
 
+.package-wrapper {
+  max-height: 640px;
+  overflow: hidden;
+  overflow-y: scroll; }
+
 .billing-form {
   box-shadow: 0 1px 15px 1px #716aca14;
   padding: 20px;
@@ -2502,5 +2511,33 @@ table.order-table {
 
 .billing-detail-page {
   padding-top: 150px; }
+
+.login-cotainer .input-group-append button {
+  background: none;
+  width: 43px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.calendar-btn {
+  background: none;
+  width: 43px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.signup-page .login-container {
+  position: relative;
+  background-image: url("../img/covid.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+.signup-page .login-container::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #ffffffe0; }
 
 /*# sourceMappingURL=thestyles.css.map */

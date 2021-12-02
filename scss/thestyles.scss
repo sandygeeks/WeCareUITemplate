@@ -124,7 +124,7 @@
                 .block-container {
                     position: relative;
                     justify-content: space-between;
-                    border-bottom: 1px solid #ECECEC;
+                    border-bottom: none;
                     .logo-container {
                         position: absolute;
                         left: 0;
@@ -142,6 +142,7 @@
                         align-items: center;
                         justify-content: center;
                         flex: 1;
+                        // background: red;
                         .nav-item {
                             ul {
                                 display: flex;
@@ -2275,6 +2276,7 @@
         text-transform: capitalize;
         line-height: 1.6;
         letter-spacing: 0;
+        padding-left: 0.75rem;
     }
     
     .shop-table thead {
@@ -2594,7 +2596,7 @@
     }
     
     .shop-table.cart-table th {
-        padding: 0.7rem 0;
+        padding: 0.7rem 0.75rem;
     }
     
     .shop-table.cart-table .product-price {
@@ -2602,7 +2604,7 @@
     }
     
     .shop-table.cart-table .product-quantity {
-        width: 25.7%;
+        width: 16%;
     }
     
     .shop-table.cart-table .product-subtotal {
@@ -2614,7 +2616,7 @@
     }
     
     .shop-table.cart-table .product-quantity .input-group {
-        max-width: 120px;
+        max-width: 100px;
     }
     
     .shop-table.cart-table .btn-close {
@@ -2975,6 +2977,12 @@
         margin-bottom: 20px;
     }
     
+    .payment-card:nth-child(1) {
+        img {
+            height: 50px;
+        }
+    }
+    
     .payment-card li,
     .payment-bank-card li {
         position: relative;
@@ -3273,6 +3281,12 @@
         }
     }
     
+    .package-wrapper {
+        max-height: 640px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    
     // ---------------------------
     // billing details page 
     // ----------------------------
@@ -3284,4 +3298,42 @@
     
     .billing-detail-page {
         padding-top: 150px;
+    }
+    
+    .login-cotainer {
+        .input-group-append {
+            button {
+                background: none;
+                width: 43px;
+                border: 1px solid #ccc;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+        }
+    }
+    
+    .calendar-btn {
+        background: none;
+        width: 43px;
+        border: 1px solid #ccc;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    .signup-page {
+        .login-container {
+            position: relative;
+            background-image: url("../img/covid.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .login-container::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #ffffffe0;
+        }
     }

@@ -161,151 +161,117 @@
         </a>
       </div>
 
-       <!-------------------------------- Content Wrapper Starts ---------------------------------->
-      <div id="content-wrapper">
-
-        <div id="packages-page">
-
-
-          <section class="packages-section">
-            <div class="custom-container">
-              <div class="section-title mb-3">
-
-
-                <h5>Best of our services</h5>
-
-                <h1>Health packages</h1>
-
-              </div>
-
-              <div class="section-content package-wrapper">
-                <div class="row mt-3">
-                  <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
-                      <div class="product-item-content">
-                        <div class="help-list-image">
-                          <img src="img/covid.jpg" alt="">
-                        </div>
-                        <div class="help-content">
-                          <div>
-                            <h2>Corporate Coivd Care</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="" class="link">Read More</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product-right-section">
-                        <div class="price-section">
-                          <h2>Rs. 4200</h2>
-                          <a href="checkout.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
+      <!-------------------------------- Content Wrapper Starts ---------------------------------->
+      <div id="content-wrapper" class=" signup-page" style="margin-top: 40px;">
+        <div class="login-container reg pt-4 pb-4">
+          <div class=" d-flex justify-content-center h-100">
+            <div class="col-10 col-sm-12 col-md-10 p-0">
+              <div class="row justify-content-center h-100 login-flex" style="padding-top: 70px;
+              ">
+                <div class="col-md-8 text-center">
+                  
+                  <div class="card text-left">
+                    <div class="card-header">
+                      <a href="" class="login-logo" style="margin-bottom: 25px"><img alt="" height="50"
+                        src="img/logo_final.png"></a>
+                      <div class="info">
+                        <h2>Register to get started<br>
+                          <p>Connect with your <strong>Doctor/Patient</strong> from your home</p>
+                        </h2>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
-                      <div class="product-item-content">
-                        <div class="help-list-image">
-                          <img src="img/covid.jpg" alt="">
-                        </div>
-                        <div class="help-content">
-                          <div>
-                            <h2>Corporate Coivd Care</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="" class="link">Read More</a>
+                    <div class="card-body">
+                      <form novalidate="" class="ng-untouched ng-pristine ng-invalid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group"><label for="phonenumber">Phone Number<span
+                                  class="required-sign">*</span></label><input autocomplete="new-phonenumber"
+                                class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="phonenumber"
+                                id="phonenumber" placeholder="Phone Number" type="text">
+                              <!---->
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group"><label for="email">Email</label><input
+                                autocomplete="mailing-address" class="form-control ng-untouched ng-pristine ng-valid"
+                                formcontrolname="mailingaddress" id="mailingaddress" placeholder="Email" type="text">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group"><label for="firstname">First Name<span
+                                  class="required-sign">*</span></label><input autocomplete="new-firstname"
+                                class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="firstname"
+                                id="firstname" placeholder=" First Name" type="text">
+                              <!---->
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group"><label for="firstname">Middle Name</label><input
+                                autocomplete="new-middlename" class="form-control ng-untouched ng-pristine ng-valid"
+                                formcontrolname="middlename" id="middlename" placeholder=" Middle Name" type="text">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group"><label for="lastname">Last Name<span
+                                  class="required-sign">*</span></label><input autocomplete="new-lastname"
+                                class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="lastname"
+                                id="lastname" placeholder=" Last Name" type="text">
+                              <!---->
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group"><label for="dateofbirth">Date of Birth</label>
+                              <div class="input-group"><input autocomplete="new-dateofbirth" bsdatepicker=""
+                                  class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="dateofbirth"
+                                  id="dateofbirth" placeholder=" Date of Birth " type="text"
+                                  style="padding-left: 0.75rem;">
+                                <div class="input-group-append"><button class="far fa-calendar-alt calendar-btn"
+                                    type="button"></button></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="password">Password<span class="required-sign">*</span></label>
+                              <input autocomplete="new-password"
+                                class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="password"
+                                placeholder="Password" validateequal="confirmpassword" type="password">
+                              <input class="showPassword" id="Password" name="Password" type="checkbox"><label
+                                for="Password" class="mt-2">Show Password</label>
+                              <!---->
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group"><label for="confirmpassword">Confirm Password<span
+                                  class="required-sign">*</span></label><input autocomplete="new-confirmpassword"
+                                class="form-control ng-untouched ng-pristine ng-invalid"
+                                formcontrolname="confirmpassword" placeholder="Confirm Password" type="password"
+                                validateequal="password">
+                              <!---->
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label class="float-left" style="font-size: 0.75rem; margin-top: 15px;"> Already have an
+                                Account ?&nbsp;&nbsp;<a class="text-primary" routerlink="/login"
+                                  href="#/login"><strong>Login</strong></a></label>
+                              <button class="btn btn-primary float-right">
+                                <!----> Register
+                              </button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="product-right-section">
-                        <div class="price-section">
-                          <h2>Rs. 4200</h2>
-                          <a href="checkout.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
-                      <div class="product-item-content">
-                        <div class="help-list-image">
-                          <img src="img/covid.jpg" alt="">
-                        </div>
-                        <div class="help-content">
-                          <div>
-                            <h2>Corporate Coivd Care</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="" class="link">Read More</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product-right-section">
-                        <div class="price-section">
-                          <h2>Rs. 4200</h2>
-                          <a href="checkout.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
-                      <div class="product-item-content">
-                        <div class="help-list-image">
-                          <img src="img/covid.jpg" alt="">
-                        </div>
-                        <div class="help-content">
-                          <div>
-                            <h2>Corporate Coivd Care</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="" class="link">Read More</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product-right-section">
-                        <div class="price-section">
-                          <h2>Rs. 4200</h2>
-                          <a href="checkout.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
-                      <div class="product-item-content">
-                        <div class="help-list-image">
-                          <img src="img/covid.jpg" alt="">
-                        </div>
-                        <div class="help-content">
-                          <div>
-                            <h2>Corporate Coivd Care</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="" class="link">Read More</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product-right-section">
-                        <div class="price-section">
-                          <h2>Rs. 4200</h2>
-                          <a href="checkout.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-
-
-
               </div>
             </div>
-          </section>
+          </div>
+          <!-- <div class="powered-section"><span>Powered By</span>
+                <div class="login-brand"><img src="../assets/img/imark-powered.png"></div>
+            </div> -->
         </div>
-
-
-
-
 
       </div>
       <!--------------------------------- Content Wrapper Ends ----------------------------------->
