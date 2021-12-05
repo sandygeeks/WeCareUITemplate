@@ -2351,6 +2351,18 @@
         border: none;
     }
     
+    .show-hide {
+        position: absolute !important;
+        right: 10px !important;
+        font-size: 16px !important;
+        background: none !important;
+        top: 50% !important;
+        margin-top: -2px !important;
+        cursor: pointer;
+        border: none !important;
+        z-index: 33;
+    }
+    
     .cart .input-group .quantity-plus {
         right: 0.5rem;
     }
@@ -2605,6 +2617,10 @@
     
     .shop-table.cart-table .product-quantity {
         width: 16%;
+        button:hover {
+            cursor: pointer;
+            box-shadow: 0 2px 6px 0 #00000066;
+        }
     }
     
     .shop-table.cart-table .product-subtotal {
@@ -3041,36 +3057,6 @@
         color: #828181;
     }
     
-    @media only screen and (max-width: 600px) {
-        .product-page {
-            height: 25vh;
-            width: 100%;
-        }
-        .help-wrapper .row div {
-            padding: 0px;
-        }
-        .custom-container {
-            padding-top: 5px !important;
-        }
-        .single-product-page {
-            padding-top: 0px;
-        }
-        .product-item-details {
-            padding-right: 0px !important;
-        }
-        .single-product-page .product-image {
-            height: 140px;
-            width: auto;
-        }
-        .custom-container {
-            padding: 10px 15px !important;
-        }
-        .single-product-page .custom-container .row {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-    }
-    
     .product-list-item {
         padding: 15px 15px !important;
         display: flex !important;
@@ -3082,7 +3068,7 @@
         margin: 10px 0px;
         border-radius: 10px;
         overflow: hidden;
-        background-color: #d0d0d029;
+        background-color: #fff;
     }
     
     .product-item-content {
@@ -3287,6 +3273,42 @@
         overflow-y: scroll;
     }
     
+    .package-wrapper {
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-y: scroll;
+        padding-right: 10px;
+        // background: linear-gradient( 45deg, #04C4FF, #3DDB9B);
+        padding: 25px;
+        border-radius: 10px;
+        padding-top: 0;
+        background: #f3f3f3;
+    }
+    
+    .package-wrapper::-webkit-scrollbar {
+        // display: none; /* for Chrome, Safari, and Opera */
+        // width: 3px;
+        // background-color: rebeccapurple;
+        color: #333;
+        // width: 65px;
+        margin-left: 30px;
+        float: left;
+        // height: 300px;
+        width: 3px;
+        background: rgb(216, 216, 216);
+        overflow-y: scroll;
+        margin-bottom: 25px;
+        padding-left: 50px;
+    }
+    
+    .package-wrapper::-webkit-scrollbar-thumb {
+        background-color: rgb(159, 159, 159);
+        border-radius: 5px;
+        // border: 2px solid #555555;
+    }
+    
     // ---------------------------
     // billing details page 
     // ----------------------------
@@ -3337,3 +3359,72 @@
             background: #ffffffe0;
         }
     }
+    
+    // -----------------------
+    //    forgot password 
+    // -----------------------
+    .forgot-pwd-wrapper {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // display: block;
+    }
+    
+    .forgot-pwd-wrapper .card {
+        max-width: 550px;
+        margin: auto;
+        display: block;
+        .otp-code-form {
+            display: flex;
+            width: 240px;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            input {
+                width: 50px;
+                height: 50px;
+                margin: 0px 5px;
+                font-size: 40px;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    // -----------------------------
+    // responsive style 
+    // ------------------------------
+    @media only screen and (max-width: 600px) {
+        .product-page {
+            height: 25vh;
+            width: 100%;
+        }
+        .help-wrapper .row div {
+            padding: 0px;
+        }
+        .custom-container {
+            padding-top: 5px !important;
+        }
+        .single-product-page {
+            padding-top: 0px;
+        }
+        .product-item-details {
+            padding-right: 0px !important;
+        }
+        .single-product-page .product-image {
+            height: 140px;
+            width: auto;
+        }
+        .custom-container {
+            padding: 10px 15px !important;
+        }
+        .single-product-page .custom-container .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    
+    // -----------------------------
+    // responsive end 
+    // ------------------------------

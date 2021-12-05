@@ -353,8 +353,8 @@
                       <li>
                         <div class="custom-radio">
                           <input type="radio" id="esewa" class="custom-control-input" name="payment">
-                          <label for="esewa" class="custom-control-label color-dark"><img src="img/esewa.png" height="40"
-                              alt="esewa" style="height: 25px;" /></label>
+                          <label for="esewa" class="custom-control-label color-dark"><img src="img/esewa.png"
+                              height="40" alt="esewa" style="height: 25px;" /></label>
                         </div>
                       </li>
                       <li>
@@ -378,28 +378,28 @@
                         <div class="custom-radio">
                           <input type="radio" id="visa-card" class="custom-control-input" name="bank-card">
                           <label for="visa-card" class="custom-control-label color-dark"><img src="img/visa.png"
-                              alt="visa"  style="height: 28px;"/></label>
+                              alt="visa" style="height: 28px;" /></label>
                         </div>
                       </li>
                       <li>
                         <div class="custom-radio">
                           <input type="radio" id="master-card" class="custom-control-input" name="bank-card">
                           <label for="master-card" class="custom-control-label color-dark"><img
-                              src="img/master-card.png" alt="master" style="height: 28px;"/></label>
+                              src="img/master-card.png" alt="master" style="height: 28px;" /></label>
                         </div>
                       </li>
                       <li>
                         <div class="custom-radio">
                           <input type="radio" id="union-pay" class="custom-control-input" name="bank-card">
                           <label for="union-pay" class="custom-control-label color-dark"><img
-                              src="img/UnionPay_logo.png" alt="union" style="height: 28px;"/></label>
+                              src="img/UnionPay_logo.png" alt="union" style="height: 28px;" /></label>
                         </div>
                       </li>
                       <li>
                         <div class="custom-radio">
                           <input type="radio" id="nabil" class="custom-control-input" name="bank-card">
-                          <label for="nabil" class="custom-control-label color-dark"><img
-                              src="img/nabil-bank.png" alt="union" style="height: 45px;" /></label>
+                          <label for="nabil" class="custom-control-label color-dark"><img src="img/nabil-bank.png"
+                              alt="union" style="height: 45px;" /></label>
                         </div>
                       </li>
                     </ul>
@@ -446,17 +446,23 @@
                                           formcontrolname="phonenumber" placeholder="Phone Number" type="text">
 
                                       </div>
-                                      <div class="input-group form-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">
-                                            <i class="fas fa-lock"></i></span></div><input autocomplete="new-password"
-                                          class="form-control ng-untouched ng-pristine ng-invalid"
+                                      <div class="input-group form-group position-relative">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        </div>
+                                        <input autocomplete="new-password" class="form-control ng-untouched ng-pristine ng-invalid"
                                           formcontrolname="password" placeholder="Password" type="password">
 
+                                          <button class="show-hide">
+                                            <i class="far fa-eye" id="showpwd"></i>
+                                            <!-- <i class="far fa-eye-slash" id="hidepwd"></i> -->
+                                          </button>
+
                                       </div>
-                                      <div class="input-group form-group mt-4"><input class="showPassword" id="Password"
+                                      <!-- <div class="input-group form-group mt-4"><input class="showPassword" id="Password"
                                           name="Password" type="checkbox"><label for="Password">Show Password</label>
-                                      </div>
-                                      <div class="row d-flex align-items-center">
+                                      </div> -->
+                                      <div class="row d-flex align-items-center mt-4">
                                         <div class="col">
                                           <div class="input-group form-group">
                                             <input class="rememberpassword" id="RememberPassword"
@@ -464,13 +470,15 @@
                                             <label for="RememberPassword">Remember Me</label>
                                           </div>
                                         </div>
-                                        <div class="col"><a href="billing-details.html" class="btn float-right btn-primary" type="submit"><span>Login</span></a></div>
+                                        <div class="col"><a href="billing-details.html"
+                                            class="btn float-right btn-primary" type="submit"><span>Login</span></a>
+                                        </div>
                                       </div>
                                     </form>
                                   </div>
                                   <div class="card-footer">
                                     <div class="d-flex justify-content-center"><a
-                                        href="/api/ForgotPassword/ForgotPassword">Forgot your
+                                        href="forgotpwd.html">Forgot your
                                         password?</a></div>
                                     <div class="d-block justify-content-center links text-center">
                                       Don't have an account? <a class="text-primary" href="signup.html">Register</a>
@@ -629,6 +637,19 @@
         $('#header-wrapper div').removeClass('visible-title');
       }
     });
+  </script>
+
+<script>
+  // $(document).ready(function(){
+  //   $("#showpwd").show();
+
+  //   $("#showpwd").click(function(){
+  //     $("#hidepwd").hide();
+  //   });
+  //   $("#hidepwd").click(function(){
+  //     $("#showpwd").show();
+  //   });
+  // });
   </script>
   <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
   <div id="lightbox" class="lightbox" style="display: none;">
