@@ -1,4 +1,4 @@
-    /**
+        /**
  * Created by Sushant Gauchan
  * Email : sushant.gauchan11@gmail.com
 */
@@ -977,7 +977,7 @@ a.btn-primary {
       border-radius: 0 20px 20px 20px;
       padding: 40px;
       background-color: #E7FAFD;
-          /*a {
+              /*a {
   &:first-of-type {
     display: block;
     font-size: 16px;
@@ -1177,7 +1177,7 @@ a.btn-primary {
 body.inEdit #header-wrapper {
   position: relative; }
 body.logged_in {
-       /* .page-template-full #header-wrapper {
+           /* .page-template-full #header-wrapper {
   top: 47px;
 }*/ }
   body.logged_in #header-wrapper {
@@ -1986,14 +1986,12 @@ form.account-details-form .form-group p {
   right: -7px; }
 
 .shop-table.cart-table td.product-subtotal {
-  font-size: 1.6rem;
   font-weight: 600; }
   .shop-table.cart-table td.product-subtotal span {
     font-size: 14px; }
 
 .shop-table.cart-table td.product-price {
-  font-weight: 400;
-  font-size: 1.6rem; }
+  font-weight: 400; }
   .shop-table.cart-table td.product-price span {
     font-size: 14px; }
 
@@ -3679,7 +3677,85 @@ table.order-table {
         flex-direction: row-reverse;
         margin-top: 15px; }
         .product-list-item .product-right-section .price-section h2 {
-          margin: 0; } }
+          margin: 0; }
+
+  .btn-delete-btn {
+    position: absolute;
+    top: 20px;
+    left: -15px; }
+    .btn-delete-btn .btn-close {
+      background: none;
+      box-shadow: none; }
+      .btn-delete-btn .btn-close i {
+        font-size: 18px;
+        color: red; }
+
+  .shop-table tr {
+    padding: 15px;
+    display: block;
+    position: relative; }
+  .shop-table thead {
+    display: none; }
+  .shop-table td {
+    display: block;
+    width: 100% !important;
+    border: none;
+    padding: 0px 15px;
+    padding-left: 0; }
+  .shop-table .product-name, .shop-table .product-price, .shop-table .product-subtotal {
+    position: relative;
+    padding-left: 60px; }
+  .shop-table .product-name::before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "Name:"; }
+  .shop-table .product-price::before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "Price:"; }
+  .shop-table .product-quantity {
+    position: absolute;
+    right: 0;
+    bottom: 25px; }
+    .shop-table .product-quantity .input-group {
+      float: right; }
+  .shop-table .product-subtotal::before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "Subtotal: "; }
+  .shop-table .product-thumbnail .btn-close {
+    display: none; }
+
+  .sticky-sidebar-wrapper {
+    display: none; }
+
+  .checkout-mobile {
+    display: block !important;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0px 15px; }
+    .checkout-mobile .checkout-sm-wrapper {
+      width: 100%;
+      background: linear-gradient(45deg, #04C4FF, #3DDB9B);
+      padding: 10px 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .checkout-mobile .checkout-sm-wrapper .btn-primary {
+        background: #fff;
+        color: #04C4FF; }
+      .checkout-mobile .checkout-sm-wrapper h3 {
+        color: #fff;
+        font-size: 18px; }
+        .checkout-mobile .checkout-sm-wrapper h3 span {
+          font-size: 22px; } }
 @media only screen and (max-width: 600px) {
   .services-section {
     padding-top: 40px; }
@@ -3709,7 +3785,8 @@ table.order-table {
     margin-top: 0px !important; }
 
   .login-flex {
-    padding-top: 0px !important; }
+    padding-top: 0px !important;
+    padding: 0px 2px !important; }
     .login-flex .info h2 {
       font-size: 24px; } }
 @media only screen and (max-width: 420px) {
