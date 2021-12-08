@@ -146,7 +146,7 @@
                               </ul>
                               </div>-->
                 <div class="image-container">
-                  <img src="./Home __ Wecare_files/menu.svg">
+                  <img src="img/menu.svg">
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@
       </header>
       <div class="common-appointment-container">
         <a class="co-btn type-fill type-border">
-          <span><img src="./Home __ Wecare_files/icon_callender.png">
+          <span><img src="img/menu.svg">
           </span>Plan Your Visit
         </a>
       </div>
@@ -181,10 +181,10 @@
             <div class="common-banner-slider">
               <div class="common-banner-container slick-initialized slick-slider">
                 <div aria-live="polite" class="slick-list draggable">
-                  <div class="slick-track" role="listbox" style="opacity: 1; width: 1520px;">
+                  <div class="slick-track" role="listbox" style="opacity: 1;">
                     <div class="banner-item slick-slide slick-current slick-active" data-slick-index="0"
                       aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00"
-                      style="width: 1520px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                      style=" position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
                       <img src="img/6a9c11ad72582f58ae75e45856e93596.png" class="banner-image">
                       <div class="text-container">
                         <div class="custom-container">
@@ -620,7 +620,35 @@
       dots: true,
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToScroll: 3,
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
     });
     $(window).scroll(function () {
       if ($(window).scrollTop() >= 150) {
@@ -631,6 +659,15 @@
         $('#header-wrapper').removeClass('nav-scroll');
         $('#header-wrapper div').removeClass('visible-title');
       }
+    });
+  </script>
+  <script>
+    jQuery(document).ready(function () {
+      $(function () {                       //run when the DOM is ready
+        $(".toggle").click(function () {  //use a class, since your ID gets mangled
+          $('#header-wrapper').toggleClass("nav-open");      //add the class to the clicked element
+        });
+      });
     });
   </script>
   <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>

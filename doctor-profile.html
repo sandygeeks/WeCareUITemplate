@@ -147,7 +147,7 @@
                               </ul>
                               </div>-->
                 <div class="image-container">
-                  <img src="./Home __ Wecare_files/menu.svg">
+                  <img src="img/menu.svg">
                 </div>
               </div>
             </div>
@@ -422,6 +422,15 @@
         $('#header-wrapper').removeClass('nav-scroll');
         $('#header-wrapper div').removeClass('visible-title');
       }
+    });
+  </script>
+   <script>
+    jQuery(document).ready(function () {
+      $(function () {                       //run when the DOM is ready
+        $(".toggle").click(function () {  //use a class, since your ID gets mangled
+          $('#header-wrapper').toggleClass("nav-open");      //add the class to the clicked element
+        });
+      });
     });
   </script>
   <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>

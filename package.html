@@ -146,7 +146,7 @@
                               </ul>
                               </div>-->
                 <div class="image-container">
-                  <img src="./Home __ Wecare_files/menu.svg">
+                  <img src="img/menu.svg">
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@
               <div class="section-content package-wrapper">
                 <div class="row mt-3">
                   <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
+                    <div class="help-list help-list-sm product-list-item">
                       <div class="product-item-content">
                         <div class="help-list-image">
                           <img src="img/covid.jpg" alt="">
@@ -204,7 +204,7 @@
                   </div>
 
                   <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
+                    <div class="help-list help-list-sm product-list-item">
                       <div class="product-item-content">
                         <div class="help-list-image">
                           <img src="img/covid.jpg" alt="">
@@ -227,7 +227,7 @@
                   </div>
 
                   <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
+                    <div class="help-list help-list-sm product-list-item">
                       <div class="product-item-content">
                         <div class="help-list-image">
                           <img src="img/covid.jpg" alt="">
@@ -250,7 +250,7 @@
                   </div>
 
                   <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
+                    <div class="help-list help-list-sm product-list-item">
                       <div class="product-item-content">
                         <div class="help-list-image">
                           <img src="img/covid.jpg" alt="">
@@ -274,7 +274,7 @@
 
 
                   <div class="col-md-12">
-                    <div class="help-list help-list-sm d-flex product-list-item">
+                    <div class="help-list help-list-sm product-list-item">
                       <div class="product-item-content">
                         <div class="help-list-image">
                           <img src="img/covid.jpg" alt="">
@@ -500,6 +500,15 @@
         $('#header-wrapper').removeClass('nav-scroll');
         $('#header-wrapper div').removeClass('visible-title');
       }
+    });
+  </script>
+   <script>
+    jQuery(document).ready(function () {
+      $(function () {                       //run when the DOM is ready
+        $(".toggle").click(function () {  //use a class, since your ID gets mangled
+          $('#header-wrapper').toggleClass("nav-open");      //add the class to the clicked element
+        });
+      });
     });
   </script>
   <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
