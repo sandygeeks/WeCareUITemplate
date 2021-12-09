@@ -5528,17 +5528,17 @@
                 }
             }
             .btn-delete-btn {
-              position: absolute;
-              top: 20px;
-              left: -15px;
-              .btn-close{
-                background: none;
-                box-shadow: none;
-                i{
-                  font-size: 18px;
-                  color: red;
+                position: absolute;
+                top: 20px;
+                left: -15px;
+                .btn-close {
+                    background: none;
+                    box-shadow: none;
+                    i {
+                        font-size: 18px;
+                        color: red;
+                    }
                 }
-              }
             }
             .shop-table {
                 tr {
@@ -5556,7 +5556,9 @@
                     padding: 0px 15px;
                     padding-left: 0;
                 }
-                .product-name,.product-price,.product-subtotal {
+                .product-name,
+                .product-price,
+                .product-subtotal {
                     position: relative;
                     padding-left: 60px;
                 }
@@ -5573,12 +5575,12 @@
                     content: "Price:";
                 }
                 .product-quantity {
-                  position: absolute;
-                  right: 0;
-                  bottom: 25px;
-                   .input-group{
-                     float: right;
-                   }
+                    position: absolute;
+                    right: 0;
+                    bottom: 25px;
+                    .input-group {
+                        float: right;
+                    }
                 }
                 .product-subtotal::before {
                     left: 0;
@@ -5586,14 +5588,13 @@
                     position: absolute;
                     content: "Subtotal: ";
                 }
-
-                .product-thumbnail{
-                  .btn-close{
-                    display: none;
-                  }
+                .product-thumbnail {
+                    .btn-close {
+                        display: none;
+                    }
                 }
             }
-            .sticky-sidebar-wrapper {
+            .sticky-sidebar-wrapper-checkout {
                 display: none;
             }
             .checkout-mobile {
@@ -5604,11 +5605,11 @@
                 z-index: 10;
                 padding: 0px 15px;
                 .checkout-sm-wrapper {
-                  width: 100%;
-                  background: linear-gradient( 45deg, #04C4FF, #3DDB9B);
-                  padding: 10px 15px;
-                  border-top-left-radius: 10px;
-                  border-top-right-radius: 10px;
+                    width: 100%;
+                    background: linear-gradient( 45deg, #04C4FF, #3DDB9B);
+                    padding: 10px 15px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -5666,7 +5667,6 @@
             .login-flex {
                 padding-top: 0px !important;
                 padding: 0px 2px !important;
-
                 .info {
                     h2 {
                         font-size: 24px;
@@ -5682,6 +5682,21 @@
             }
             .services-item.slick-slide.slick-current.slick-active {
                 // width: 400px;
+            }
+            // .payment-card, .payment-bank-card{
+            //     flex-direction: column;
+            //     align-items: flex-start;
+            //     li{
+            //         padding: 10px 0;
+            //     }
+            // }
+            .payment-card,
+            .payment-bank-card {
+                flex-wrap: wrap;
+                li {
+                    padding: 10px 0;
+                    width: 45%;
+                }
             }
         }
         

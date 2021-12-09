@@ -3702,7 +3702,9 @@ table.order-table {
     border: none;
     padding: 0px 15px;
     padding-left: 0; }
-  .shop-table .product-name, .shop-table .product-price, .shop-table .product-subtotal {
+  .shop-table .product-name,
+  .shop-table .product-price,
+  .shop-table .product-subtotal {
     position: relative;
     padding-left: 60px; }
   .shop-table .product-name::before {
@@ -3729,7 +3731,7 @@ table.order-table {
   .shop-table .product-thumbnail .btn-close {
     display: none; }
 
-  .sticky-sidebar-wrapper {
+  .sticky-sidebar-wrapper-checkout {
     display: none; }
 
   .checkout-mobile {
@@ -3792,6 +3794,14 @@ table.order-table {
 @media only screen and (max-width: 420px) {
   .banner-item {
     height: 280px;
-    padding-top: 100px; } }
+    padding-top: 100px; }
+
+  .payment-card,
+  .payment-bank-card {
+    flex-wrap: wrap; }
+    .payment-card li,
+    .payment-bank-card li {
+      padding: 10px 0;
+      width: 45%; } }
 
 /*# sourceMappingURL=thestyles.css.map */
